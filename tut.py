@@ -357,6 +357,86 @@
 # ------------------------------------------------------------------------
 
 # ------------------------------------------------------------------------
+# RETURN STATEMENT - funkcije salju python vrednosti/objekte nazad ko ih poziva
+#                    ove vrednosti/objekti su poznati kao povratne vrednosti funkcija
+
+# def multiply(number1,number2):
+#     resault = number1 * number2
+#     return resault
+
+# x = multiply(5,4)
+
+# print(x)
+# ------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------
+# KEYWORD ARGUMENTS - 
+
+# def hello(first,middle,last):
+#     print("Hello "+first +" "+middle+" "+last)
+
+# hello(last="Leve", middle="Dejan", first="Leca")
+# ------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------
+# NESTED FUNCTION CALLS - pozivanje funkcija unutar funkcija
+#                         unutrasnje funkcije se pozivaju prve
+#                         return vrednosti se koriste za sledecu iznad
+
+# num=input("Unesi ceo pozitivni broj: ")
+# num=float(num)
+# num=abs(num)
+# num=round(num)
+# print(num)
+
+# print(round(abs(float(input("Unesi ceo pozitivan broj: ")))))
+# ------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------
+# SCOPE - Region u kome je varijabla vidljiva
+#         varijabla je dostupna samo u regionu u kome je kreirana
+#
+
+# name = "Leca"           # Global socpe (dostupna unutar i izvan funkcija)
+
+# def display_name():
+#     name = "Leve"       # Local scope (dostupna samo u funkciji)
+#     print(name)
+
+# display_name()
+# print(name)
+# ------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------
+# *args - parametar koji ce spakovati sve argumente u tuple
+#         korisno zato sto funkcija moze da prihvati varirajuci broj argumenata
+
+# def add(*numbers):
+#     sum = 0 
+#     numbers = list(numbers)
+#     numbers[0] = 0
+#     for i in numbers:
+#         sum += i
+#     return sum
+    
+# print(add(1,2,3,4,5,6))
+# ------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------
+# **kwargs - parametar koji ce spakovati sve argumente dikseneri
+
+# def hello(**imena):
+#     # print("hello "+ nesto["first"] + " " + nesto["last"] )
+#     print("hello", end=" ")
+#     for i,j in imena.items():
+#         print(j, end=" ")
+
+# hello(tittle="Mr.", first="Leca", middle="dejan", last="Leve")
+# ------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------
+
+
 
 
 

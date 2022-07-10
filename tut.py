@@ -435,10 +435,79 @@
 # ------------------------------------------------------------------------
 
 # ------------------------------------------------------------------------
+# str.format() - opciona metoda koja daje vecu kontrolu prilikom prikazivanja outputa
 
+# animal = "cow"
+# item = "moon"
 
+# print("The "+animal+" jumped over "+item)
+# print("The {} jumped over the {}".format("cow","moon"))
+# print("The {} jumped over the {}".format(animal,item))
+# print("The {1} jumped over the {0}".format(item,animal)) #positional argument
+# print("The {animal} jumped over the {item}".format(item="moon",animal="cow")) #keyword argument
 
+# text = "The {} jumped over the {}"
 
+# print(text.format(animal,item))
+
+# name = "Leca"
+
+# print("hello my name is {}".format(name))
+# print("hello my name is {:10}".format(name)) #dodavanje paddinga
+# print("hello my name is {:<10}".format(name)) #dodavanje paddinga desno
+# print("hello my name is {:>10}".format(name)) #dodavanje paddinga levo
+# print("hello my name is {:^10}".format(name)) #dodavanje paddinga centar
+
+# number = 1000
+
+# print("The number pi is {:.2f}".format(number)) #f za float i broj za broj decimala
+# print("The number is {:,}".format(number))      #zarez za hiljaditi deo
+# print("The number is {:b}".format(number))      #binarni prikaz
+# print("The number is {:o}".format(number))      #oktalni prikaz
+# print("The number is {:X}".format(number))      #heksadekadni prikaz
+# print("The number is {:E}".format(number))      #"naucni" prikaz
+# ------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------
+# random modul
+
+# import random
+
+# x = random.randint(1,6)     #random broj izmenju 1 i 6 
+# y= random.random()          #random broj izmenju 0 i 1 sa zarezom
+
+# mylist = ["rock", "paper", "scissors"]
+# z= random.choice(mylist)
+
+# cards = [1,2,3,4,5,6,7,8,9,"J","Q","K","A"]
+# random.shuffle(cards)
+
+# print(x,y,z,cards)
+# ------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------
+# exception - 
+# try:
+#     numerator = int(input("Enter a number to divide: "))
+#     denominator = int(input("Enter a number to divide by: "))
+#     result = numerator/denominator
+#     print(result)
+# except ZeroDivisionError as e:
+#     print(e)
+#     print("you cant devide by 0")
+# except ValueError as e:
+#     print(e)
+#     print("enter only numbers")
+# except Exception as e:
+#     print(e)
+#     print("something went wrong")
+# else:
+#     print(result)
+# finally:
+#     print("this will always execute")
+# ------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------
 
 
 

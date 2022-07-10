@@ -508,11 +508,100 @@
 # ------------------------------------------------------------------------
 
 # ------------------------------------------------------------------------
+# File detection
 
+# import os
 
+# path = "C:\\Users\\aleks\\Desktop\\Python\\test.txt"
+# path2 = "C:\\Users\\aleks\\Desktop\\Python\\test"
 
+# if os.path.exists(path2):
+#     print("That location exists!")
+#     if os.path.isfile(path):
+#         print("That is a file")
+#     elif os.path.isdir(path):
+#         print("That is a directory")
+# else: 
+#     print("That location doenst exists!")
+# ------------------------------------------------------------------------
 
+# ------------------------------------------------------------------------
+# Read file in python
+# try:                                    #try i exept ako file ne postoji da izbaci gresku
+#     with open("test.txt") as file:      #with open automatski zatvara file
+#         print(file.read())
+# except FileNotFoundError:
+#     print("That file was not found")
 
+# print(file.closed)                      #da li je file zatvoren
+# ------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------
+# Writing files in python
+
+# text = "What is this maaaan\nThis is some text\nHave a good one!"
+
+# with open("test.txt","a") as file:  # "a" za append, "w" za write, "r" za read
+#     file.write(text)
+# ------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------
+# copy files in python
+
+# copyfile() - kopira sadrzaj filea
+# copy()     -  copyfile() + permission mode + destination can be directory
+# copy2()    - copy() + copies metadata (file's creation and modificition times)
+
+# import shutil
+
+# shutil.copyfile("test.txt","test\\copy.txt") #sorce, destination
+# ------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------
+# moving files or directory
+
+# import os
+
+# source = "test2.txt"
+# destination = "test\\test2.txt"
+
+# try:
+#     if not os.path.exists(source):
+#         print("This file dont exist")
+#     elif os.path.exists(destination):
+#         print("there is alredy a file there")
+#     else:
+#         os.replace(source, destination)
+#         print(source+" was moved")
+# except FileNotFoundError:
+#     print(source+" was not found")
+# ------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------
+# delete files using python
+
+# import os
+# import shutil
+
+# path = "test\\test3.txt"
+# path1 = "empty_folder"
+
+# try:
+#     # os.remove(path)           # ne brise prazne foldere
+#     #os.rmdir(path1)            # ne brise foldere koji sadrze files
+#     shutil.rmtree(path1)        # brise folder i sve u njemu
+
+# except FileNotFoundError:
+#     print("That file was not found")
+# except PermissionError:
+#     print("You dont have promition to delete that")
+# except OSError:
+#     print("You can not delete that using that function")
+# else: 
+#     print(path1+" was deleted")
+# ------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------
 
 
 
